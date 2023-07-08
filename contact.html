@@ -4,7 +4,7 @@
 
 <meta charset="UTF-8">
 
-<title>Edward S. Hansen</title>
+<title>Contact Me - Edward S. Hansen</title>
 
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
@@ -14,6 +14,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 <head>
     <a rel="me" href="https://mastodon.social/@luxdacia"></a>
@@ -74,6 +76,15 @@ p, span {
     color: white;
 }
 
+label, input, textarea {
+    font-family: "Montserrat", "sans-serif";
+    font-weight: 400;
+}
+
+.g-recaptcha div {
+    margin-left: auto; margin-right: auto;
+}
+
 </style>
 
 <script></script>
@@ -82,28 +93,48 @@ p, span {
 <main>
     <div class="container-fluid gradient d-flex vh-100">
         <div class="container my-auto">
-            <div class="row text-center">
-                <div class="col">
-                    <p style="color: white;">Hello! You've Reached:</p>
+            <form method="POST" target="_blank">
+                <div class="row text-center">
+                    <div class="col">
+                        <h1 style="color: white;">Contact Me</h2>
+                    </div>
                 </div>
-            </div>
-            <div class="row text-center">
-                <div class="col">
-                    <h1 class="" style="color: white;">Edward S. Hansen</h1>
-                </div>
-            </div>
-            <div class="container p-0 d-flex">
                 <div class="row mx-auto">
-                    <div class="col p-3 text-center">
-                        <button type="button" onclick=" window.open('http://www.edwardshansen.com','_blank')" class="btn btn-warning btn-lg">Portfolio</button>
-                    </div>
-                    <div class="col p-3 text-center">
-                        <a href="https://lightingnomad.github.io/edward-hansen/contact/">
-                        <button type="button" class="btn btn-warning btn-lg">Contact</button>
-                        </a>   
+                    <div class="col-sm-6 col-md-6 col-lg-6 pt-3 mx-auto">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                            <label for="floatingInput">email address</label>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <div class="row mx-auto">
+                    <div class="col-sm-6 col-md-6 col-lg-6 mx-auto">
+                        <div class="form-floating mb-3">
+                            <input type="name" class="form-control" id="name" placeholder="name">
+                            <label for="floatingInput">name</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-auto">
+                    <div class="col-sm-6 col-md-6 col-lg-6 mx-auto">
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="message" id="message" style="height: 100px"></textarea>
+                            <label for="floatingTextarea2">message</label>
+                          </div>
+                    </div>
+                </div>
+                <div class="row mx-auto">
+                    <div class="col mx-auto mt-3">
+                        <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                    </div>
+                </div>
+                <div class="row text-center mx-auto">
+                    <div class="col mt-3">
+                        <button type="button" class="btn btn-warning btn-lg">Submit</button>
+                    </div>
+                </div>
+            </form>
+
         </div>
     </div>
 </main>
