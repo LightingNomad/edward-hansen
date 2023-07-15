@@ -26,7 +26,7 @@
         font-weight: 700;
         font-size: 64px;
         line-height: 64px;
-        text-shadow: 4px 4px 5px rgb(48, 48, 48);
+        /* text-shadow: 4px 4px 5px rgb(48, 48, 48); */
     }
 
     h2 {
@@ -34,7 +34,7 @@
         font-weight: 700;
         font-size: 24px;
         line-height: 24px;
-        text-shadow: 4px 4px 5px rgb(48, 48, 48);
+        /* text-shadow: 4px 4px 5px rgb(48, 48, 48); */
     }
 
     p,
@@ -43,7 +43,7 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 16px;
-        text-shadow: 4px 4px 5px rgb(48, 48, 48);
+        /* text-shadow: 4px 4px 5px rgb(48, 48, 48); */
     }
 
     .gradient {
@@ -71,7 +71,7 @@
         border: none;
         cursor: pointer;
         white-space: nowrap;
-        box-shadow: 4px 4px 5px rgb(48, 48, 48);
+        /* box-shadow: 4px 4px 5px rgb(48, 48, 48); */
     }
 
     .btn:hover {
@@ -110,10 +110,10 @@
                     </div>
                 </div>
             </div>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.rings.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js"></script>
             <script>
-                VANTA.RINGS({
+                VANTA.TOPOLOGY({
                     el: "#vanta-element",
                     mouseControls: true,
                     touchControls: true,
@@ -122,9 +122,8 @@
                     minWidth: 200.00,
                     scale: 1.00,
                     scaleMobile: 1.00,
-                    backgroundColor: 0x0,
-                    color: 0xa41d9b,
-                    backgroundAlpha: 0.00
+                    color: 0x8300ff,
+                    backgroundColor: 0xf215f
                 })
             </script>
         </div>
@@ -134,7 +133,9 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
-                    <span style="color: white; font-size: 10pt;">&copy Edward S. Hansen <script>document.write(new Date().getFullYear())</script></span>
+                    <span style="color: white; font-size: 10pt;">&copy Edward S. Hansen
+                        <script>document.write(new Date().getFullYear())</script>
+                    </span>
                 </div>
             </div>
         </div>
