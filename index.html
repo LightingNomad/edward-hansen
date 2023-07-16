@@ -78,6 +78,62 @@
         background-image: linear-gradient(135deg, rgba(255, 0, 0, 1), rgba(255, 255, 0, 1));
         color: white;
     }
+
+    #fadein {
+        animation: fadein 4s;
+        -moz-animation: fadein 4s;
+        /* Firefox */
+        -webkit-animation: fadein 4s;
+        /* Safari and Chrome */
+        -o-animation: fadein 4s;
+        /* Opera */
+    }
+
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @-moz-keyframes fadein {
+
+        /* Firefox */
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @-webkit-keyframes fadein {
+
+        /* Safari and Chrome */
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @-o-keyframes fadein {
+
+        /* Opera */
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
 </style>
 
 <script></script>
@@ -85,7 +141,7 @@
 <body>
     <main>
         <div class="container-fluid gradient d-flex vh-100" id="vanta-element">
-            <div class="container my-auto">
+            <div class="container my-auto" id="fadein">
                 <div class="row text-center">
                     <div class="col">
                         <p style="color: white;">Hello! You've Reached:</p>
